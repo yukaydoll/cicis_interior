@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #f3f3f3;
+}
+header{
+    min-height: 60px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    border-bottom: 3px solid #573328;
+    overflow: hidden;
+}
+.headlogo{
+    margin: 10px auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 20px;
+    width: 20px;
+    background-color: indigo; 
+    display: inline-block;
+    border: 1px solid #573328;
+    margin: -1px;
+    
+}
+.logoname{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -2px;
+    margin-left: 5px;
+    text-shadow: 2px 2px 4px #573328;
+    
+}
+.c1{
+    border-radius:  100% 0 0 100%;
+    text-shadow: 2px 2px 4px #573328;
+}
+.i{
+    height: 30px;
+    width: 5px;
+    text-shadow: 2px 2px 4px #573328;
+}
+.c2{
+   
+    border-radius: 0 100% 100% 0;
+    text-shadow: 2px 2px 4px #573328;
+}
+.headnav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    
+}
+.headnav ul li a{
+    color: indigo;
+}
+.headcases{
+    display: none;
+    color: indigo;
+    text-transform: uppercase;
+    border: 1px solid #573328;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+.headcases:hover{
+    background-color: #573328;
+    color: #ffffff;
+}
+.sec1{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.sec1 h1{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 900;
+    color: #573328;
+    text-shadow: 2px 2px 4px #ffffff;
+    margin: 20px;
+
+}
+.sec1 p{
+    font-size: 20px;
+    color: #ffffff;
+    font-style: italic;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.sec1btn{
+    padding: 10px;
+    border: 1px solid #573328;
+    border-radius: 5px;
+    background-color: #573328;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+.sec1btn:hover{
+    background-color: #573328;
+    opacity: 0.3;
+    color: #fff;
+    border: none;
+}
+.box{
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: 250px;
+    text-align: center;
+}
+.box h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #573328;
+    padding: 20px;
+}
+.box1{
+    background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/imgbox1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.box2{
+    background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/imgbox2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.box3{
+    background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/imgbox3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.box4{
+    background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/imgbox4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.box5{
+    background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/imgbox5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+footer{
+    font-size: 20px;
+}
+.smimg{
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+.foot1{
+    text-align: center;
+    border-top: 0.1px solid #573328;
+
+}
+@media only screen and (min-width: 1000px){
+   header, .logonav{
+       display:flex;
+       justify-content: space-around;
+   }
+   .headcases{
+    display: block;
+}
+nav ul li{
+    border-left: 1px solid #573328;
+    padding-left: 10px ;
+}
+.boxes{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-areas: "a a a a a a a a h h h h"
+                         ". c c c c c c c c c c ."                
+                         "v v v v v v b b b b b b";
+}
+.box1{
+    grid-area: a;
+    }
+.box2{
+        grid-column: v;
+        }
+.box3{
+    grid-area: h ;
+}
+.box4{
+    grid-area: b;
+    }
+    
+.box5{
+    grid-area: c;
+    }
+    .foot{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
